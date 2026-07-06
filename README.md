@@ -2,6 +2,7 @@
 É uma projeto de uma inteligência artificial criada a partir do 0. Usando Java com POO, CSS e vários fundamentos da progrmação.
 
 # ATLAS
+ATLAS — Build the future, one command at a time.
 
 ATLAS é um assistente pessoal desenvolvido em Java.
 
@@ -59,3 +60,5 @@ Versão atual: **0.1.0**
 ---
 
 Projeto iniciado em 30/06/2026.
+
+ATLAS — Your Intelligent Desktop Companion
