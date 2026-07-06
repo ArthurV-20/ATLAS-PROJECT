@@ -1,0 +1,4 @@
+Main.class
+ui/AtlasApplication.class
+br/com/atlas/task/impl/OpenAppTask.class
+br/com/atlas/task/AtlasTask.class

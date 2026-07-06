@@ -1,0 +1,198 @@
+/* Configuração do container principal (Fundo do ATLAS) */
+.root {
+    -fx-background-color: #050800; /* O preto azulado profundo do blueprint */
+}
+
+/* Estilo para as barras e painéis laterais (Fase 1 - Esqueleto) */
+.top-bar, .bottom-bar {
+    -fx-background-color: rgba(11, 17, 24, 0.8);
+    -fx-border-color: rgba(0, 191, 255, 0.4);
+    -fx-border-width: 0 0 1 0; /* Linha fina ciano apenas na parte inferior */
+    -fx-padding: 15px;
+}
+
+.bottom-bar {
+    -fx-border-width: 1 0 0 0; /* Linha fina ciano apenas na parte superior */
+}
+
+.sidebar-left {
+    -fx-background-color: rgba(11, 17, 24, 0.6);
+    -fx-border-color: rgba(0, 191, 255, 0.4);
+    -fx-border-width: 0 1 0 0; /* Linha vertical à direita */
+    -fx-padding: 20px;
+    -fx-pref-width: 220px;
+}
+
+.sidebar-right {
+    -fx-background-color: rgba(11, 17, 24, 0.6);
+    -fx-border-color: rgba(0, 191, 255, 0.4);
+    -fx-border-width: 0 0 0 1; /* Linha vertical à esquerda */
+    -fx-padding: 20px;
+    -fx-pref-width: 240px;
+}
+
+/* Área central onde ficarão os gráficos futuros */
+.main-dashboard {
+    -fx-padding: 25px;
+}
+
+/* Estilo futurista para os textos do HUD */
+.hud-text {
+    -fx-font-family: "Orbitron", "Arial Black", sans-serif;
+    -fx-fill: #00BFFF; /* Ciano Neon */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 191, 255, 0.8), 10, 0, 0, 0);
+}
+/* Botões de Navegação da Sidebar */
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #8BA1B0; /* Cor de texto secundária do blueprint */
+    -fx-font-family: "Orbitron", "Arial", sans-serif;
+    -fx-font-size: 14px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10px 15px;
+    -fx-cursor: hand;
+    -fx-max-width: infinity;
+    -fx-border-color: transparent;
+}
+
+/* Efeito Hover nos Botões (Glow ao passar o rato) */
+.nav-button:hover {
+    -fx-text-fill: #00BFFF; /* Ciano */
+    -fx-background-color: rgba(0, 191, 255, 0.08);
+    -fx-border-color: rgba(0, 191, 255, 0.4);
+    -fx-border-width: 0 0 0 3px; /* Borda fina neon à esquerda */
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 191, 255, 0.3), 5, 0, 0, 0);
+}
+
+/* Botão Ativo */
+.nav-button:focused {
+    -fx-text-fill: #00BFFF;
+    -fx-background-color: rgba(0, 191, 255, 0.12);
+    -fx-border-color: rgba(0, 191, 255, 0.8);
+    -fx-border-width: 0 0 0 3px;
+}
+
+/* Estilo para o Relógio do HUD */
+.hud-clock {
+    -fx-font-family: "Orbitron", "Arial Black", sans-serif;
+    -fx-font-size: 16px;
+    -fx-fill: #00BFFF;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 191, 255, 0.6), 8, 0, 0, 0);
+}
+/* Container de Alertas na Direita */
+.alerts-container {
+    -fx-spacing: 15px;
+}
+
+/* Título das Seções Laterais */
+.section-title {
+    -fx-font-family: 'Orbitron', sans-serif;
+    -fx-fill: #8BA1B0;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 5px 0;
+}
+
+/* Card de Alerta Individual */
+.alert-card {
+    -fx-background-color: rgba(255, 69, 0, 0.05); /* Vermelho/Laranja bem sutil */
+    -fx-border-color: rgba(255, 69, 0, 0.3);
+    -fx-border-width: 1px;
+    -fx-border-radius: 4px;
+    -fx-padding: 10px;
+    -fx-spacing: 5px;
+}
+
+/* Texto interno do Alerta */
+.alert-header {
+    -fx-font-family: 'Orbitron', sans-serif;
+    -fx-font-size: 12px;
+    -fx-fill: #FF4500; /* Laranja Crítico */
+    -fx-font-weight: bold;
+}
+
+.alert-body {
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-font-size: 11px;
+    -fx-fill: #8BA1B0;
+}
+
+/* Estilos da Barra Inferior (Status Bar) */
+.status-indicator {
+    -fx-font-family: 'Orbitron', sans-serif;
+    -fx-font-size: 12px;
+    -fx-fill: #32CD32; /* Verde Ativo */
+}
+
+.status-label {
+    -fx-font-family: 'Arial', sans-serif;
+    -fx-font-size: 12px;
+    -fx-fill: #8BA1B0;
+}
+/* Container da Grade Central */
+.dashboard-grid {
+    -fx-hgap: 20px; /* Espaçamento horizontal entre cards */
+    -fx-vgap: 20px; /* Espaçamento vertical entre cards */
+}
+
+/* Estilo do Card Principal */
+.telemetry-card {
+    -fx-background-color: rgba(11, 17, 24, 0.5);
+    -fx-border-color: rgba(0, 191, 255, 0.25);
+    -fx-border-width: 1px;
+    -fx-border-radius: 6px;
+    -fx-padding: 20px;
+    -fx-min-width: 240px;
+    -fx-min-height: 120px;
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+/* Efeito Glow ao passar o mouse sobre o card */
+.telemetry-card:hover {
+    -fx-border-color: rgba(0, 191, 255, 0.7);
+    -fx-background-color: rgba(11, 17, 24, 0.7);
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 191, 255, 0.2), 15, 0, 0, 0);
+}
+
+/* Texto de Título do Card */
+.card-title {
+    -fx-font-family: 'Orbitron', sans-serif;
+    -fx-fill: #8BA1B0;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+/* Valor de leitura do Card */
+.card-value {
+    -fx-font-family: 'Orbitron', sans-serif;
+    -fx-font-size: 28px;
+    -fx-fill: #00BFFF;
+    -fx-font-weight: bold;
+    -fx-padding: 10 0 0 0;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 191, 255, 0.4), 5, 0, 0, 0);
+}
+/* Campo de Entrada de Texto do HUD */
+.hud-input-field {
+    -fx-background-color: rgba(11, 17, 24, 0.8);
+    -fx-border-color: rgba(0, 191, 255, 0.4);
+    -fx-border-width: 1px;
+    -fx-border-radius: 4px;
+    -fx-text-fill: #00BFFF;
+    -fx-font-family: "Orbitron", "Arial", sans-serif;
+    -fx-font-size: 14px;
+    -fx-padding: 10px;
+}
+
+.hud-input-field:focused {
+    -fx-border-color: #00BFFF;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 191, 255, 0.4), 8, 0, 0, 0);
+}
+
+/* Área de Console de Mensagens */
+.message-log-area {
+    -fx-background-color: rgba(5, 8, 0, 0.5);
+    -fx-border-color: rgba(0, 191, 255, 0.15);
+    -fx-border-width: 1px;
+    -fx-border-radius: 6px;
+    -fx-padding: 15px;
+}
